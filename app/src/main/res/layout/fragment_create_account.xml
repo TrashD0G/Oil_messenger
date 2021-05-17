@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.createAccount.CreateAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:id="@+id/textViewHeadingCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:text="@string/text_view_heading_create_account"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextEmailCreateAccount"
+                    android:hint="@string/edit_text_email_create_account"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextPasswordCreateAccount"
+                    android:hint="@string/edit_text_password_create_account"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:inputType="textVisiblePassword"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextFirstNameCreateAccount"
+                    android:hint="@string/edit_text_first_name_create_account"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextLastNameCreateAccount"
+                    android:hint="@string/edit_text_last_name_create_account"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/button_create_create_account"/>
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/button_back_create_account"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

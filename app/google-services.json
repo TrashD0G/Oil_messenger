@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1066400284542",
+    "project_id": "messenger-oil",
+    "storage_bucket": "messenger-oil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066400284542:android:4fb3bf680eb20fa1a97d2f",
+        "android_client_info": {
+          "package_name": "com.artem.oilmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066400284542-8drkpjmkr22tlmq3vmsk1l4ciehqkd5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEKdraTGUpxyWjaV_Sh--k8vCJvfd6eQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066400284542-8drkpjmkr22tlmq3vmsk1l4ciehqkd5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

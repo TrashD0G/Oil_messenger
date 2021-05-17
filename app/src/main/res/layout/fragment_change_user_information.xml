@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.changeUserInformation.ChangeUserInformationFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewUserChange"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:padding="5dp"
+        android:src="@drawable/user256"/>
+
+    <Button
+        android:id="@+id/buttonUserChangePhoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/button_circle"
+        android:clickable="true"
+        app:icon="@drawable/camera64"
+        app:iconGravity="start|end"
+        app:iconSize="40dp"
+        android:focusable="true" />
+
+
+    <TextView
+        android:id="@+id/textViewFirstNameUserChange"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageViewUserChange"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="120dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewLastNameUserChange"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageViewUserChange"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
+
+
+
+

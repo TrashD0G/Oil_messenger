@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    signingConfigs {
+        debug {
+            keyPassword 'arti1998'
+            storeFile file('C:\\Users\\Artem\\Desktop\\Android app\\Key\\My key.jks')
+            keyAlias 'artem'
+            storePassword 'arti1998'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    buildFeatures {
+        viewBinding true
+    }
+
+
+    defaultConfig {
+        applicationId "com.artem.oilmessenger"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    def lifecycle_version = "2.3.1"
+    def nav_version = "2.3.5"
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-auth:21.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Navigation Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.3.9"
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    // Dagger
+    implementation 'com.google.dagger:dagger:2.29.1'
+    kapt 'com.google.dagger:dagger-compiler:2.29.1'
+
+    // Cropper
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+}

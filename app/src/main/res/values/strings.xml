@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Oil messenger</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- fragment_enter_account-->
+    <string name="text_view_heading_enter_account">Вход в аккаунт</string>
+    <string name="edit_text_account_login_enter_account">Email, номер телефона</string>
+    <string name="edit_text_account_password_enter_account">Пароль</string>
+    <string name="button_enter_enter_account">Вход</string>
+    <string name="button_register_enter_account">Регистрация</string>
+
+    <!-- fragment_create_account-->
+    <string name="text_view_heading_create_account">Регистрация</string>
+    <string name="edit_text_email_create_account">Email</string>
+    <string name="edit_text_password_create_account">Пароль</string>
+    <string name="edit_text_phone_number_create_account">Номер телефона</string>
+    <string name="edit_text_first_name_create_account">Имя</string>
+    <string name="edit_text_last_name_create_account">Фамилия</string>
+    <string name="button_create_create_account">Создать</string>
+    <string name="button_back_create_account">Назад</string>
+
+    <!-- drawerlayout-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

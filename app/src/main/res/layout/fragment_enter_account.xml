@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.enterAccount.EnterAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:id="@+id/textViewHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:text="@string/text_view_heading_enter_account"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextAccountLogin"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/edit_text_account_login_enter_account"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/editTextAccountPassword"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/edit_text_account_password_enter_account"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonEnter"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/button_enter_enter_account"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="@string/button_register_enter_account"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
